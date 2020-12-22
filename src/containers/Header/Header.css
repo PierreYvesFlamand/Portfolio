@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    min-height: 100vh;
     background: #2e3235;
     color: #fff;
     display: flex;
@@ -10,9 +10,20 @@
 }
 
 .header-container {
-    max-width: 55rem;
     margin: 0 auto;
+    padding: 0 1em;
+    opacity: 0;
+    transform: scale(0.4);
+
+    transition: all 800ms;
 }
+
+.header-container.fade-in {
+    max-width: 55rem;
+    transform: scale(1);
+    opacity: 1;
+}
+
 .header-text {
     text-align: center;
     font-size: 2rem;
@@ -57,6 +68,7 @@
 .header-ctas {
     max-width: 55rem;
     margin: 3em auto -1em;
+    padding: 0 3.5em;
     display: flex;
     justify-content: space-around;
 }
@@ -64,7 +76,7 @@
 .header-cta {
     display: block;
     text-decoration: none;
-    height: 2.82em;
+    height: 2.9em;
     overflow: hidden;
     text-transform: uppercase;
 }
@@ -101,4 +113,33 @@
 
 .header-cta:hover .hover {
     transform: translateY(0%);
+}
+
+@media screen and (max-width: 600px) {
+    .header-text {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .header-h1 {
+        font-size: 4rem;
+        letter-spacing: 0.7px;
+    }
+
+    .header-container {
+        padding: 3em 1.5em;
+    }
+
+    .header-ctas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-cta {
+        width: max-content;
+    }
+
+    .header-cta:first-of-type {
+        margin-bottom: 2em;
+    }
 }

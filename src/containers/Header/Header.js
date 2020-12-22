@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Header.css';
 
-const header = {
-    ctas: ['about-me', 'my-projects'],
-    subs: [
-        'FRONT-END AND REACT DEVELOPER PASSIONATE BY WEB EXTENSION',
-        "HIT ME UP AND LET'S COLLABORATE TOGETHER",
-    ],
-};
+export default function Header(props) {
+    const ref = useRef();
+    const [fadeIn, setFadeIn] = useState(false);
 
-export default function Header() {
+    const { header } = props.data;
     const { subs, ctas } = header;
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                setFadeIn(true);
+                observer.unobserve(ref.current);
+            }
+        });
+        observer.observe(ref.current);
+
+        return () => observer.unobserve(ref.current);
+    }, [header]);
 
     return (
         <header className='header'>
-            <div className='header-container'>
+            <div className={`header-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
                 <div className='header-text'>
                     <h1 className='header-h1'>PIERRE-YVES F.</h1>
 
