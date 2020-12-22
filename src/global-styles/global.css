@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Staatliches&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Staatliches', sans-serif;
+}
+
+h1,
+h2 {
+    margin: 0;
+}

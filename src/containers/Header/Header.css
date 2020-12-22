@@ -1,0 +1,104 @@
+.header {
+    height: 100vh;
+    background: #2e3235;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.header-container {
+    max-width: 55rem;
+    margin: 0 auto;
+}
+.header-text {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.header-h1 {
+    font-size: 6.5rem;
+    letter-spacing: 0.7px;
+}
+
+.header-sub {
+    color: #97a4b1;
+    margin: 0.3em;
+}
+
+.word {
+    height: 1em;
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.word-base,
+.word-hover {
+    margin: 0 0.1em;
+    transform: translateY(0%);
+    transition: transform 200ms ease-in-out;
+}
+
+.word-hover {
+    color: #5b646d;
+}
+
+.word.isActive .word-hover,
+.word.isActive .word-base {
+    transform: translateY(-100%);
+}
+
+/* CTAS */
+
+.header-ctas {
+    max-width: 55rem;
+    margin: 3em auto -1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-cta {
+    display: block;
+    text-decoration: none;
+    height: 2.82em;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.15em solid #fff;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+
+    transform: translateY(-100%);
+    transition: transform 150ms;
+}
+
+.hover {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 0.15em solid #fff;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+
+    transform: translateY(-100%);
+    transition: transform 150ms;
+}
+
+.header-cta:hover .link {
+    transform: translateY(-5%);
+}
+
+.header-cta:hover .hover {
+    transform: translateY(0%);
+}
