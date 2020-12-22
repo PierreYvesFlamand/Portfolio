@@ -1,0 +1,79 @@
+.aside-social {
+    position: fixed;
+    height: 0;
+    top: 50%;
+    left: 0;
+    font-size: 1rem;
+    z-index: 99;
+}
+
+.aside-social ul {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aside-social li {
+    width: 9em;
+    padding-left: 1em;
+    height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: -5.8em;
+
+    transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.aside-social li:hover {
+    left: -1em;
+}
+
+.aside-social .aside-social-linkedin {
+    top: -7em;
+    background-color: #0077b5;
+}
+
+.aside-social .aside-social-github {
+    top: -3.5em;
+    background-color: #333333;
+}
+
+.aside-social .aside-social-email {
+    top: 0;
+    background-color: #c73939;
+}
+
+.aside-social .aside-social-resume {
+    top: 3.5em;
+    background-color: #6eb8bf;
+}
+
+.aside-social .aside-social-resume i {
+    padding-right: 0.1em;
+}
+
+.aside-social a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1em;
+}
+
+.aside-social a:link,
+.aside-social a:visited,
+.aside-social a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.aside-social a span {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.aside-social a i {
+    margin-left: 0.5em;
+    font-size: 1.5rem;
+}

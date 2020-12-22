@@ -1,3 +1,27 @@
 .about {
-    height: 100vh;
+    min-height: 100vh;
+    background: #2e3235;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata';
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0.4);
+    opacity: 0;
+
+    transition: all 800ms;
+}
+
+.about-container.fade-in {
+    transform: scale(1);
+    opacity: 1;
 }
