@@ -4,6 +4,7 @@ import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 import Header from './containers/Header/Header';
+import About from './containers/About/About';
 import Footer from './containers/Footer/Footer';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
     ) : (
         <>
             <Header data={data} />
+            <About />
             <Footer />
         </>
     );
