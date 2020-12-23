@@ -9,15 +9,17 @@ export default function Header(props) {
     const { subs, ctas } = header;
 
     useEffect(() => {
+        const nodeRef = ref.current;
+
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 setFadeIn(true);
-                observer.unobserve(ref.current);
+                observer.unobserve(nodeRef);
             }
         });
-        observer.observe(ref.current);
+        observer.observe(nodeRef);
 
-        return () => observer.unobserve(ref.current);
+        return () => observer.unobserve(nodeRef);
     }, [header]);
 
     return (

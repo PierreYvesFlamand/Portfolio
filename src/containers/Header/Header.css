@@ -1,6 +1,6 @@
 .header {
     min-height: 100vh;
-    background: #2e3235;
+    background: #22262a;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@
 }
 
 .header-sub {
-    color: #97a4b1;
+    color: #94a4b4;
     margin: 0.3em;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .word-hover {
-    color: #5b646d;
+    color: #5b6570;
 }
 
 .word.isActive .word-hover,
