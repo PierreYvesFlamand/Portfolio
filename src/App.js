@@ -8,13 +8,15 @@ import Header from './containers/Header/Header';
 import About from './containers/About/About';
 import Footer from './containers/Footer/Footer';
 
+import ProjectModal from './containers/ProjectModal/ProjectModal';
+
 export default function App() {
     const [minLoading, setMinLoading] = useState(true);
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        setTimeout(() => setMinLoading(false), 900);
+        setTimeout(() => setMinLoading(false), 1); // 900
 
         fetch('./data/data.json')
             .then((res) => res.json())
@@ -34,6 +36,7 @@ export default function App() {
             <Header data={data} />
             <About />
             <Footer />
+            <ProjectModal />
         </>
     );
 }
