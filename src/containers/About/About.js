@@ -22,22 +22,12 @@ export default function About() {
     return (
         <section className='about' id='about-me'>
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
-                <h2>About</h2>
+                <h2>About me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla aspernatur id
-                    magnam rerum commodi quaerat enim dignissimos deserunt voluptatum!
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, optio!</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla aspernatur id
-                    magnam rerum commodi quaerat enim dignissimos deserunt voluptatum!
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam officia odio!
-                    Ipsum, quisquam perferendis neque architecto labore quo repellat iure placeat quae aperiam
-                    fugit molestias incidunt impedit minus modi hic mollitia minima qui temporibus nihil
-                    numquam. Sed facilis fugiat voluptatem reiciendis aspernatur cupiditate quisquam, unde
-                    labore minima quibusdam. Omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque velit pariatur ad
+                    eos! Autem veritatis tempora totam! In unde laborum quo, sint ab possimus facere numquam
+                    esse, a consequatur iusto asperiores dolores, voluptates laboriosam quos eos. Unde,
+                    deserunt. Ipsam ad unde repellat impedit quasi, porro vitae autem harum debitis!
                 </p>
             </div>
         </section>
