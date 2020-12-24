@@ -22,17 +22,20 @@ export default function About() {
     return (
         <section className='about' id='about-me'>
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
-                <h2>About me</h2>
+                <h2
+                    onClick={() => {
+                        document.querySelector('.project-modal').classList.add('show');
+                    }}
+                >
+                    About me
+                </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio eum tempore
-                    architecto, labore incidunt blanditiis nostrum reiciendis doloribus illo debitis, sequi
-                    voluptatem eveniet impedit repellendus. Animi, expedita tenetur! Voluptatem deserunt illo,
-                    aperiam iste nostrum repellendus cupiditate asperiores distinctio, tempora eum molestiae
-                    et. Nesciunt suscipit consectetur unde repudiandae aliquam repellendus!
+                    Développeur de 24 ans pationné d'algorithmie et du web depuis 2 ans. Je suis actuellement
+                    en formation en cours du soir à Saint Laurent. Téléchargez mon CV ici (kb)
                 </p>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab suscipit amet pariatur. Id,
-                    sit non!
+                    Html5, Css3 et Js(ES6) sont les piliés de mes compétences. Ils m'ont permis de créer des
+                    sites responsives et plusieurs projets plus orientés Javascript.
                 </p>
             </div>
         </section>

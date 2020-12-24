@@ -49,7 +49,12 @@ export default function ProjectModal() {
                         </a>
                     </div>
                 </div>
-                <div className='close-btn'></div>
+                <div
+                    onClick={() => {
+                        document.querySelector('.project-modal').classList.remove('show');
+                    }}
+                    className='close-btn'
+                ></div>
             </article>
         </div>
     );

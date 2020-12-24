@@ -10,6 +10,8 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
+
+    transition: visibility 400ms cubic-bezier(0.175, 0.985, 0.32, 1.275);
 }
 
 .project-modal.show {
@@ -23,17 +25,19 @@
     background-color: #343a41;
     box-shadow: 0 0 5px #000;
     position: relative;
-    transform: scale(0.5);
+    transform: scale(0.01);
+    opacity: 0;
 
-    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
-}
-
-.project-content {
-    padding: 0.8em;
+    transition: all 500ms cubic-bezier(0.175, 0.985, 0.32, 1.275) 10ms;
 }
 
 .project-modal.show .project-container {
     transform: scale(1);
+    opacity: 1;
+}
+
+.project-content {
+    padding: 0.8em;
 }
 
 .project-img {
@@ -103,7 +107,7 @@
     margin-top: 0.8em;
     margin-right: 0.7em;
 
-    transition: all 250ms ease-out;
+    transition: background 250ms ease-out;
 }
 
 .project-link i {
@@ -122,7 +126,7 @@
     width: 1em;
     cursor: pointer;
     transform: scale(0.92);
-    transition: all 250ms ease-in;
+    transition: transform 250ms ease-in;
 }
 
 .close-btn::before,
@@ -151,7 +155,7 @@
         display: flex;
         width: 1000px;
         max-width: 90%;
-        height: 500px;
+        height: 450px;
     }
 
     .project-img {
@@ -162,7 +166,7 @@
     .project-content {
         padding-left: 1em;
         width: 40%;
-        height: 500px;
+        height: 450px;
         display: flex;
         flex-direction: column;
     }
