@@ -6,6 +6,7 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import AsideSocial from './containers/AsideSocial/AsideSocial';
 import Header from './containers/Header/Header';
 import About from './containers/About/About';
+import Projects from './containers/Projects/Projects';
 import Footer from './containers/Footer/Footer';
 
 import ProjectModal from './containers/ProjectModal/ProjectModal';
@@ -35,6 +36,7 @@ export default function App() {
             <AsideSocial />
             <Header data={data} />
             <About />
+            <Projects />
             <Footer />
             <ProjectModal />
         </>

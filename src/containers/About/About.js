@@ -24,10 +24,15 @@ export default function About() {
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
                 <h2>About me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque velit pariatur ad
-                    eos! Autem veritatis tempora totam! In unde laborum quo, sint ab possimus facere numquam
-                    esse, a consequatur iusto asperiores dolores, voluptates laboriosam quos eos. Unde,
-                    deserunt. Ipsam ad unde repellat impedit quasi, porro vitae autem harum debitis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio eum tempore
+                    architecto, labore incidunt blanditiis nostrum reiciendis doloribus illo debitis, sequi
+                    voluptatem eveniet impedit repellendus. Animi, expedita tenetur! Voluptatem deserunt illo,
+                    aperiam iste nostrum repellendus cupiditate asperiores distinctio, tempora eum molestiae
+                    et. Nesciunt suscipit consectetur unde repudiandae aliquam repellendus!
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab suscipit amet pariatur. Id,
+                    sit non!
                 </p>
             </div>
         </section>
