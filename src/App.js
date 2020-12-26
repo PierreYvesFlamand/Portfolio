@@ -37,9 +37,8 @@ export default function App() {
             <AsideSocial />
             <Header data={data.header} />
             <About data={data.about} />
-            <Projects />
+            <Projects data={data.projects} />
             <Footer />
-            <ProjectModal />
             <BackToTop />
         </>
     );

@@ -49,7 +49,7 @@
 .project-img {
     display: block;
     width: 100%;
-    height: 12em;
+    height: 14.8em;
     background-color: #343a41;
     background-blend-mode: overlay;
     background-size: auto 100%;
@@ -81,8 +81,8 @@
 
 .project-about {
     letter-spacing: 2px;
-    font-size: 0.9rem;
-    margin-bottom: 0.5em;
+    font-size: 0.95rem;
+    margin-bottom: 0.4em;
     color: #94a4b4;
 }
 

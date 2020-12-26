@@ -1,7 +1,7 @@
 .projects {
     min-height: 100vh;
     background: #22262a;
-    padding-top: 3em;
+    padding: 3em 0;
 }
 
 .projects-container {
@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-.projects-container h2 {
+.projects-header {
     font-size: 2.5rem;
     color: white;
     text-align: center;
@@ -77,7 +77,7 @@
     opacity: 1;
 }
 
-.project .hover a {
+.project .hover span {
     width: 8.75em;
     position: absolute;
     bottom: 1.1em;
@@ -94,7 +94,7 @@
     transition: all 150ms ease-in-out;
 }
 
-.project .hover a:hover {
+.project .hover span:hover {
     background: hsla(0, 0%, 100%, 0.95);
     transform: scale(1.09);
 }

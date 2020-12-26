@@ -1,61 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './ProjectModal.css';
 
-export default function ProjectModal() {
+export default function ProjectModal(props) {
+    const [mounted, setMounted] = useState(false);
+    const { img, title, techs, desc, demoLink, codeLink } = props.data;
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    function closeModal() {
+        setMounted(false);
+        setTimeout(() => {
+            props.closeBtn(false);
+        }, 400);
+        document.body.style.overflow = 'unset';
+    }
+
     return (
-        <div className='project-modal'>
+        <div onClick={closeModal} className={`project-modal ${mounted ? 'show' : ''}`}>
             <article className='project-container'>
-                <div className='project-img' style={{ backgroundImage: 'url(./data/img/avatar.png)' }}></div>
+                <div className='project-img' style={{ backgroundImage: `url(./data/img/${img})` }}></div>
                 <div className='project-content'>
-                    <h1 className='project-title'>TITLE OF PROJECT</h1>
+                    <h1 className='project-title'>{title.toUpperCase()}</h1>
                     <div className='project-tech'>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JAVASCRIPT</span>
-                        <span>REACT</span>
-                        <span>RESPONSIVE</span>
-                        <span>SASS</span>
+                        {techs.map((tech, idx) => (
+                            <span key={idx}>{tech.toUpperCase()}</span>
+                        ))}
                     </div>
                     <h2 className='project-about'>ABOUT</h2>
                     <div className='project-desc'>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-                            consequatur.
-                        </p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur
-                            quaerat quasi ipsum eius. Eligendi!
-                        </p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur
-                            quaerat quasi ipsum eius. Eligendi!
-                        </p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur
-                            quaerat quasi ipsum eius. Eligendi!
-                        </p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur
-                            quaerat quasi ipsum eius. Eligendi!
-                        </p>
+                        {desc.map((desc, idx) => (
+                            <p key={idx}>${desc}</p>
+                        ))}
                     </div>
                     <div className='project-links'>
-                        <a className='project-link' href='#'>
+                        <a className='project-link' href={demoLink}>
                             <i className='far fa-eye'></i>DEMO
                         </a>
-                        <a className='project-link' href='#'>
+                        <a className='project-link' href={codeLink}>
                             <i className='fas fa-code'></i>CODE
                         </a>
                     </div>
                 </div>
-                <div
-                    onClick={() => {
-                        document.querySelector('.project-modal').classList.remove('show');
-                        document.body.style.overflow = 'unset';
-                    }}
-                    className='close-btn'
-                ></div>
+                <div onClick={closeModal} className='close-btn'></div>
             </article>
         </div>
     );
