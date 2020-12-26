@@ -22,3 +22,12 @@
     margin: 0;
     padding: 0.4em 0;
 }
+
+.footer-container a {
+    color: #94a4b4;
+    text-decoration: underline;
+}
+
+.footer-container a:hover {
+    text-decoration: none;
+}

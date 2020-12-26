@@ -5,8 +5,10 @@ export default function Footer() {
     return (
         <footer className='footer'>
             <div className='footer-container'>
-                <p>© 2020 Pierre-Yves Flamand</p>
-                <p>All Rights Reseved</p>
+                <p>
+                    Email: <a href='mailto:pyflamand@gmail.com'>pyflamand@gmail.com</a>
+                </p>
+                <p>© 2020 Pierre-Yves Flamand | All Rights Reseved</p>
             </div>
         </footer>
     );
