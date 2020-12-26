@@ -1,0 +1,20 @@
+.backToTop {
+    font-size: 2rem;
+    position: fixed;
+    background-color: #5b657034;
+    color: #94a4b4;
+    bottom: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    padding: 0.4em 0.4em 0;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 250ms ease-in;
+}
+
+.backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

@@ -10,6 +10,7 @@ import Projects from './containers/Projects/Projects';
 import Footer from './containers/Footer/Footer';
 
 import ProjectModal from './containers/ProjectModal/ProjectModal';
+import BackToTop from './containers/BackToTop/BackToTop';
 
 export default function App() {
     const [minLoading, setMinLoading] = useState(true);
@@ -39,6 +40,7 @@ export default function App() {
             <Projects />
             <Footer />
             <ProjectModal />
+            <BackToTop />
         </>
     );
 }
