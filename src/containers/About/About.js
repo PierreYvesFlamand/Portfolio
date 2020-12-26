@@ -22,13 +22,7 @@ export default function About() {
     return (
         <section className='about' id='about-me'>
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
-                <h2
-                    onClick={() => {
-                        document.querySelector('.project-modal').classList.add('show');
-                    }}
-                >
-                    About me
-                </h2>
+                <h2>About me</h2>
                 <p>
                     Développeur de 24 ans pationné d'algorithmie et du web depuis 2 ans. Je suis actuellement
                     en formation en cours du soir à Saint Laurent. Téléchargez mon CV ici (kb)

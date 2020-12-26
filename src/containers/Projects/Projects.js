@@ -10,7 +10,16 @@ export default function Projects() {
                 <div className='all-projetcs'>
                     <div className='project'>
                         <div className='img' style={{ backgroundImage: 'url(./data/img/avatar.png)' }}></div>
-                        <div className='hover'>{/* <a href='#'>VIEW PROJECT</a> */}</div>
+                        <div className='hover'>
+                            <a
+                                href='#'
+                                onClick={() => {
+                                    document.querySelector('.project-modal').classList.add('show');
+                                }}
+                            >
+                                <i className='far fa-eye'></i>VIEW PROJECT
+                            </a>
+                        </div>
                     </div>
                     <div className='project'></div>
                     <div className='project'></div>
