@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './About.css';
 
-export default function About() {
+export default function About(props) {
     const ref = useRef();
     const [fadeIn, setFadeIn] = useState(false);
+    const { text } = props.data;
 
     useEffect(() => {
         const nodeRef = ref.current;
@@ -23,14 +24,9 @@ export default function About() {
         <section className='about' id='about-me'>
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
                 <h2>About me</h2>
-                <p>
-                    Développeur de 24 ans pationné d'algorithmie et du web depuis 2 ans. Je suis actuellement
-                    en formation en cours du soir à Saint Laurent. Téléchargez mon CV ici (kb)
-                </p>
-                <p>
-                    Html5, Css3 et Js(ES6) sont les piliés de mes compétences. Ils m'ont permis de créer des
-                    sites responsives et plusieurs projets plus orientés Javascript.
-                </p>
+                {text.map((text, idx) => (
+                    <p key={idx}>{text}</p>
+                ))}
             </div>
         </section>
     );

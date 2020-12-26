@@ -35,8 +35,8 @@ export default function App() {
     ) : (
         <>
             <AsideSocial />
-            <Header data={data} />
-            <About />
+            <Header data={data.header} />
+            <About data={data.about} />
             <Projects />
             <Footer />
             <ProjectModal />

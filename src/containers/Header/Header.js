@@ -5,8 +5,7 @@ export default function Header(props) {
     const ref = useRef();
     const [fadeIn, setFadeIn] = useState(false);
 
-    const { header } = props.data;
-    const { subs, ctas } = header;
+    const { subs, ctas } = props.data;
 
     useEffect(() => {
         const nodeRef = ref.current;
@@ -20,7 +19,7 @@ export default function Header(props) {
         observer.observe(nodeRef);
 
         return () => observer.unobserve(nodeRef);
-    }, [header]);
+    }, []);
 
     return (
         <header className='header'>
