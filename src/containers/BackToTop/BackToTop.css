@@ -8,13 +8,19 @@
     cursor: pointer;
     padding: 0.4em 0.4em 0;
     border-radius: 50%;
-    visibility: hidden;
     opacity: 0;
+    z-index: -999;
 
     transition: opacity 250ms ease-in;
 }
 
 .backToTop.show {
     opacity: 1;
-    visibility: visible;
+    z-index: initial;
+}
+
+@media screen and (min-width: 800px) {
+    .backToTop.show {
+        display: none;
+    }
 }
