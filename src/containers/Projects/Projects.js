@@ -7,9 +7,9 @@ export default function Projects(props) {
     const projects = props.data;
 
     return (
-        <section className='projects' id='my-projects'>
+        <section className='projects' id='mes-projets'>
             <div className='projects-container'>
-                <h2 className='projects-header'>Projects</h2>
+                <h2 className='projects-header'>Mes Projets</h2>
                 <div className='all-projetcs'>
                     {projects.map((project, idx) => (
                         <Project key={idx} data={project} />
@@ -24,7 +24,6 @@ function Project(props) {
     const { img } = props.data;
 
     const [modalOpen, setModalOpen] = useState(false);
-    console.log(modalOpen);
 
     return (
         <>

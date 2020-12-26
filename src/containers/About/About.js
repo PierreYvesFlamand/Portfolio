@@ -21,9 +21,9 @@ export default function About(props) {
     }, []);
 
     return (
-        <section className='about' id='about-me'>
+        <section className='about' id='a-propos'>
             <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
-                <h2>About me</h2>
+                <h2>A propos</h2>
                 {text.map((text, idx) => (
                     <p key={idx}>{text}</p>
                 ))}

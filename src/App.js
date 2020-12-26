@@ -7,9 +7,9 @@ import AsideSocial from './containers/AsideSocial/AsideSocial';
 import Header from './containers/Header/Header';
 import About from './containers/About/About';
 import Projects from './containers/Projects/Projects';
+import Contact from './containers/Contact/Contact';
 import Footer from './containers/Footer/Footer';
 
-import ProjectModal from './containers/ProjectModal/ProjectModal';
 import BackToTop from './containers/BackToTop/BackToTop';
 
 export default function App() {
@@ -38,6 +38,7 @@ export default function App() {
             <Header data={data.header} />
             <About data={data.about} />
             <Projects data={data.projects} />
+            <Contact />
             <Footer />
             <BackToTop />
         </>
