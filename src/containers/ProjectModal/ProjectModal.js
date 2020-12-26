@@ -52,6 +52,7 @@ export default function ProjectModal() {
                 <div
                     onClick={() => {
                         document.querySelector('.project-modal').classList.remove('show');
+                        document.body.style.overflow = 'unset';
                     }}
                     className='close-btn'
                 ></div>

@@ -15,6 +15,7 @@ export default function Projects() {
                                 href='#'
                                 onClick={() => {
                                     document.querySelector('.project-modal').classList.add('show');
+                                    document.body.style.overflow = 'hidden';
                                 }}
                             >
                                 <i className='far fa-eye'></i>VIEW PROJECT
