@@ -26,7 +26,7 @@
 }
 
 .project {
-    background-color: yellowgreen; /* rgb(26, 26, 26); */
+    background-color: rgb(26, 26, 26); /* rgb(26, 26, 26); */
     height: 200px;
     box-shadow: 0 0 13px #000;
     cursor: pointer;
