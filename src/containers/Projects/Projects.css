@@ -1,7 +1,7 @@
 .projects {
     min-height: 100vh;
     background: #22262a;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .projects-container {
@@ -19,25 +19,35 @@
 
 .all-projetcs {
     display: grid;
-    padding: 0 1em;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
-    grid-gap: 40px;
+    padding: 0 3em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 35px;
     justify-content: center;
 }
 
 .project {
-    background-color: rgb(26, 26, 26); /* rgb(26, 26, 26); */
-    height: 200px;
+    background-color: rgb(26, 26, 26);
     box-shadow: 0 0 13px #000;
     cursor: pointer;
     overflow: hidden;
     position: relative;
 }
 
-.project .img {
+.project::before {
+    content: '';
     display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(10 / 16 * 100%);
+}
+
+.project .img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +61,9 @@
 }
 
 .project .hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
     height: 100%;
     border: none;

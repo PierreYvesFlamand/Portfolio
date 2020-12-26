@@ -78,7 +78,7 @@
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .aside-social {
         transform: scale(0.8);
     }
