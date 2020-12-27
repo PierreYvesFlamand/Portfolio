@@ -82,8 +82,13 @@
 .project-about {
     letter-spacing: 2px;
     font-size: 0.95rem;
+    margin: 0;
     margin-bottom: 0.4em;
     color: #94a4b4;
+}
+
+.project-about::after {
+    display: none;
 }
 
 .project-desc {
