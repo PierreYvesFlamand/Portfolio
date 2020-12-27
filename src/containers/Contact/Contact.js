@@ -8,10 +8,10 @@ export default function Contact() {
     const [message, setMessage] = useState('');
 
     return (
-        <section className='contact'>
+        <section className='contact' id='contactez-moi'>
             <div className='contact-container'>
-                <h2 className='contact-header'>Contactez Moi</h2>
-                <form action='./contact.php' className='contact-form'>
+                <h2 className='contact-header'>Contactez-Moi</h2>
+                <form action='./contact.php' className='contact-form' method='POST'>
                     <label htmlFor='name'>
                         <i className='fas fa-user'></i>
                     </label>

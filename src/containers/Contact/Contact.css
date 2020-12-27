@@ -92,4 +92,12 @@
     letter-spacing: 0.5px;
     width: max-content;
     justify-self: flex-end;
+    outline: none;
+
+    transition: border 200ms ease-in;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    border: 3px solid rgba(0, 0, 0, 0.4);
 }
