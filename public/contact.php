@@ -30,19 +30,19 @@ if (!empty($_POST)) {
         mail($mailTo, $subject, $txt, $header);
 
             /* Confirmation Email */
-        $mailTo = $formDatas['email'];
-        $subject = "Confirmation d'envoie de votre message";
-        $header = "From: ".$formDatas['email'];
+        // $mailTo = $formDatas['email'];
+        // $subject = "Confirmation d'envoie de votre message";
+        // $header = "From: ".$formDatas['email'];
 
-        $txt = "Un nouveau formulaire de contact du portfolio a ete complete.\n\n";
-        $txt .= "Email: ".$formDatas['email']."\n";
-        $txt .= "Nom:   ".$formDatas['name']."\n";
-        $txt .= "Message:\n";
-        $txt .= $formDatas['message'];
+        // $txt = "Un nouveau formulaire de contact du portfolio a ete complete.\n\n";
+        // $txt .= "Email: ".$formDatas['email']."\n";
+        // $txt .= "Nom:   ".$formDatas['name']."\n";
+        // $txt .= "Message:\n";
+        // $txt .= $formDatas['message'];
 
         mail($mailTo, $subject, $txt, $header);
     }
 
-    header("Location: ./index.html?mail-envoye");
+    header("Location: ./index.html?success-mail-sent");
 }
 ?>

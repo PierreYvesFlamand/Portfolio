@@ -6,26 +6,26 @@ export default function AsideSocial() {
         <aside className='aside-social'>
             <ul>
                 <li className='aside-social-linkedin'>
-                    <a href='#'>
+                    <a href='https://www.linkedin.com/in/pierre-yves-flamand/'>
                         <span>Linkedin</span>
                         <i className='fab fa-linkedin'></i>
                     </a>
                 </li>
                 <li className='aside-social-github'>
-                    <a href='#'>
+                    <a href='https://github.com/PierreYvesFlamand'>
                         <span>Github</span>
                         <i className='fab fa-github'></i>
                     </a>
                 </li>
                 <li className='aside-social-email'>
-                    <a href='#'>
+                    <a href='mailto:contact@pierreyvesflamand.com'>
                         <span>Email</span>
                         <i className='far fa-envelope'></i>
                     </a>
                 </li>
                 <li className='aside-social-resume'>
-                    <a href='#'>
-                        <span>Resume</span>
+                    <a href='./cv.pdf'>
+                        <span>Mon CV</span>
                         <i className='fas fa-file'></i>
                     </a>
                 </li>
