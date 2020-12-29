@@ -27,10 +27,13 @@ export default function About(props) {
                 {text.map((text, idx) => (
                     <p key={idx}>{text}</p>
                 ))}
+                <p className='cv-link'>
+                    <a href='CV_Pierre-Yves_Flamand.pdf' download>
+                        Télécharger mon cv (53.8Ko)
+                    </a>
+                    <i className='fas fa-download'></i>
+                </p>
             </div>
         </section>
     );
 }
-
-// "Développeur de 24 ans pationné d'algorithmie et du web depuis 2 ans. Je suis actuellement en formation en cours du soir à l'Institut Saint Laurent. Téléchargez mon CV ici (kb)",
-// "Html5, Css3 et Js(ES6) sont les piliés de mes compétences. Ils m'ont permis de créer des sites responsives et plusieurs projets plus orientés Javascript."
