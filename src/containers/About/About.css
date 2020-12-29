@@ -35,7 +35,7 @@
 }
 
 .about-container p {
-    margin: 0.3em 0;
+    margin: 0.5em 0;
 }
 
 .about-container .cv-link {
@@ -58,8 +58,91 @@
     color: #5b6570;
 }
 
+.about-content {
+    max-width: 520px;
+}
+
+.about-tech {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.8em;
+    opacity: 0.95;
+}
+
+.about-tech i {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+.about-tech img {
+    width: 4rem;
+    height: 4rem;
+}
+.html {
+    color: #e54c21;
+}
+.css {
+    color: #214ce5;
+}
+.js {
+    color: #f7e018;
+}
+.sass {
+    color: #cf649a;
+}
+.react {
+    color: #61dafb;
+}
+.git {
+    color: #fa4f28;
+}
+.gulp {
+    color: #eb4a4b;
+}
+
+.about-container .header-cta {
+    grid-column: 2;
+    width: max-content;
+    margin-top: 1.1em;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.about-container .hover {
+    padding-bottom: 0.7em;
+}
+
+.about-container .link {
+    margin-top: -0.2em;
+}
+
 @media screen and (min-width: 1000px) {
     .about-container {
         padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        grid-column-gap: 1em;
+    }
+
+    .about-container h2 {
+        grid-column: span 2;
+    }
+
+    .about-tech {
+        width: 65%;
+        justify-self: center;
+    }
+
+    .about-tech i {
+        margin: 1rem;
+    }
+    .about-tech img {
+        margin-top: 0.5rem;
+    }
+
+    .git {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
