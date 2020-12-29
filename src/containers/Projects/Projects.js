@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import './Projects.css';
 import ProjectModal from '../ProjectModal/ProjectModal';
@@ -22,13 +22,28 @@ export default function Projects(props) {
 
 function Project(props) {
     const { img } = props.data;
-
     const [modalOpen, setModalOpen] = useState(false);
 
+    const ref = useRef();
+    const [fadeIn, setFadeIn] = useState(false);
+
+    useEffect(() => {
+        const nodeRef = ref.current;
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                setFadeIn(true);
+                observer.unobserve(nodeRef);
+            }
+        });
+        observer.observe(nodeRef);
+
+        return () => observer.unobserve(nodeRef);
+    }, []);
     return (
         <>
             {modalOpen ? <ProjectModal data={props.data} closeBtn={setModalOpen} /> : null}
-            <div className='project'>
+            <div className={`project${fadeIn ? ' fade-in' : ''}`} ref={ref}>
                 <div className='img' style={{ backgroundImage: `url(./data/img/projects/${img})` }}></div>
                 <div
                     className='hover'

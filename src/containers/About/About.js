@@ -48,7 +48,15 @@ export default function About(props) {
                     </p>
                 </div>
 
-                <a className='header-cta' href='#mes-projets'>
+                <a
+                    className='header-cta'
+                    href='#mes-projets'
+                    onClick={() => {
+                        setTimeout(() => {
+                            window.history.replaceState({}, document.title, '/');
+                        }, 1);
+                    }}
+                >
                     <span className='hover'>mes projets</span>
                     <span className='link'>mes projets</span>
                 </a>

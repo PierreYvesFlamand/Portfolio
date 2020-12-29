@@ -12,7 +12,7 @@ export default function AsideSocial() {
                     </a>
                 </li>
                 <li className='aside-social-github'>
-                    <a href='https://github.com/pierreYvesflamand' target='_blank' rel='noreferrer'>
+                    <a href='https://github.com/pierreyvesflamand' target='_blank' rel='noreferrer'>
                         <span>Github</span>
                         <i className='fab fa-github'></i>
                     </a>

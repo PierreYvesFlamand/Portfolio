@@ -31,6 +31,14 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    transform: scale(0.85);
+
+    transition: all 300ms;
+}
+
+.project.fade-in {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .project::before {

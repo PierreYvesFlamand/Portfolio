@@ -48,7 +48,16 @@ function Ctas({ data }) {
         <div className='header-ctas'>
             {data.map((cta, idx) => {
                 return (
-                    <a key={`cta-${idx}`} className='header-cta' href={`#${cta}`}>
+                    <a
+                        key={`cta-${idx}`}
+                        className='header-cta'
+                        href={`#${cta}`}
+                        onClick={() => {
+                            setTimeout(() => {
+                                window.history.replaceState({}, document.title, '/');
+                            }, 1);
+                        }}
+                    >
                         <span className='hover'>{cta.replace(/-/g, '  ')}</span>
                         <span className='link'>{cta.replace(/-/g, '  ')}</span>
                     </a>
