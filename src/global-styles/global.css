@@ -50,7 +50,7 @@ h2::after {
 }
 
 .loading-screen {
-    background-color: #2e3235;
+    background-color: #22262a;
     height: 100vh;
     display: flex;
     justify-content: center;
