@@ -6,13 +6,13 @@ export default function AsideSocial() {
         <aside className='aside-social'>
             <ul>
                 <li className='aside-social-linkedin'>
-                    <a href='https://www.linkedin.com/in/pierreyvesflamand/' target='_blank'>
+                    <a href='https://www.linkedin.com/in/pierreyvesflamand/' target='_blank' rel='noreferrer'>
                         <span>Linkedin</span>
                         <i className='fab fa-linkedin'></i>
                     </a>
                 </li>
                 <li className='aside-social-github'>
-                    <a href='https://github.com/pierreYvesflamand' target='_blank'>
+                    <a href='https://github.com/pierreYvesflamand' target='_blank' rel='noreferrer'>
                         <span>Github</span>
                         <i className='fab fa-github'></i>
                     </a>
@@ -24,7 +24,7 @@ export default function AsideSocial() {
                     </a>
                 </li>
                 <li className='aside-social-resume'>
-                    <a href='CV_Pierre-Yves_Flamand.pdf' target='_blank'>
+                    <a href='CV_Pierre-Yves_Flamand.pdf' target='_blank' rel='noreferrer'>
                         <span>Mon CV</span>
                         <i className='fas fa-file'></i>
                     </a>

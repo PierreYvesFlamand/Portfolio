@@ -36,10 +36,10 @@ export default function ProjectModal(props) {
                         ))}
                     </div>
                     <div className='project-links'>
-                        <a className='project-link' href={demoLink} target='_blank'>
+                        <a className='project-link' href={demoLink} target='_blank' rel='noreferrer'>
                             <i className='far fa-eye'></i>DEMO
                         </a>
-                        <a className='project-link' href={codeLink} target='_blank'>
+                        <a className='project-link' href={codeLink} target='_blank' rel='noreferrer'>
                             <i className='fas fa-code'></i>CODE
                         </a>
                     </div>
