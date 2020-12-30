@@ -7,7 +7,7 @@ import FadeIn from '../../hooks/FadeIn';
 import ProjectModal from '../ProjectModal/ProjectModal';
 
 export default function Projects() {
-    const projects = useContext(DataContext).projects;
+    const projects = useContext(DataContext).data.projects;
 
     return (
         <section className='projects' id='mes-projets'>
@@ -31,7 +31,7 @@ function Project(props) {
     return (
         <>
             {modalOpen ? <ProjectModal data={props.data} closeBtn={setModalOpen} /> : null}
-            <div className={`project${fadeIn ? ' fade-in' : ''}`} ref={ref}>
+            <div className='project' style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null} ref={ref}>
                 <div className='img' style={{ backgroundImage: `url(./data/img/projects/${img})` }}></div>
                 <div
                     className='hover'

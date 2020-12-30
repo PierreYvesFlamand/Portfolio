@@ -1,18 +1,22 @@
-import React, { useEffect, useRef, useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import './Header.css';
 
 import { DataContext } from '../../context/dataContext';
 import FadeIn from '../../hooks/FadeIn';
 
 export default function Header() {
-    const { subs, ctas } = useContext(DataContext).header;
+    const { title, subs, ctas } = useContext(DataContext).data.header;
     const [ref, fadeIn] = FadeIn();
 
     return (
         <header className='header'>
-            <div className={`header-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
+            <div
+                className='header-container'
+                style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null}
+                ref={ref}
+            >
                 <div className='header-text'>
-                    <h1 className='header-h1'>PIERRE-YVES F.</h1>
+                    <h1 className='header-h1'>{title}</h1>
 
                     {subs.map((sub, idxSub) => {
                         return (
@@ -27,6 +31,27 @@ export default function Header() {
                 <Ctas data={ctas} />
             </div>
         </header>
+    );
+}
+
+function Word({ word }) {
+    const [isActive, setIsActive] = useState(false);
+
+    return (
+        <span
+            className={`word${isActive ? ' isActive' : ''}`}
+            onMouseEnter={() => {
+                setIsActive(true);
+            }}
+            onMouseLeave={() => {
+                setTimeout(() => {
+                    setIsActive(false);
+                }, 1400);
+            }}
+        >
+            <span className='word-base'>{word}</span>
+            <span className='word-hover'>{word}</span>
+        </span>
     );
 }
 
@@ -51,26 +76,5 @@ function Ctas({ data }) {
                 );
             })}
         </div>
-    );
-}
-
-function Word({ word }) {
-    const [isActive, setIsActive] = useState(false);
-
-    return (
-        <span
-            className={`word${isActive ? ' isActive' : ''}`}
-            onMouseEnter={() => {
-                setIsActive(true);
-            }}
-            onMouseLeave={() => {
-                setTimeout(() => {
-                    setIsActive(false);
-                }, 1400);
-            }}
-        >
-            <span className='word-base'>{word}</span>
-            <span className='word-hover'>{word}</span>
-        </span>
     );
 }

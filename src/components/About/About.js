@@ -5,12 +5,16 @@ import { DataContext } from '../../context/dataContext';
 import FadeIn from '../../hooks/FadeIn';
 
 export default function About() {
-    const { text } = useContext(DataContext).about;
+    const { text } = useContext(DataContext).data.about;
     const [ref, fadeIn] = FadeIn();
 
     return (
         <section className='about' id='a-propos'>
-            <div className={`about-container${fadeIn ? ' fade-in' : ''}`} ref={ref}>
+            <div
+                className='about-container'
+                style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null}
+                ref={ref}
+            >
                 <h2>A propos</h2>
 
                 <div className='about-tech'>

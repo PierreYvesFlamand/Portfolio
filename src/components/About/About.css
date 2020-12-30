@@ -20,11 +20,6 @@
     transition: all 800ms;
 }
 
-.about-container.fade-in {
-    transform: scale(1);
-    opacity: 1;
-}
-
 .about-container h2 {
     font-size: 2.2rem;
     letter-spacing: 1px;

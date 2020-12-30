@@ -11,15 +11,10 @@
     margin: 0 auto;
     padding: 0 1.1em;
     opacity: 0;
+    max-width: 55rem;
     transform: scale(0.4);
 
     transition: all 800ms;
-}
-
-.header-container.fade-in {
-    max-width: 55rem;
-    transform: scale(1);
-    opacity: 1;
 }
 
 .header-text {
