@@ -17,7 +17,7 @@ function DataContextProvider({ children }) {
             });
     }, []);
 
-    const showLoading = minLoading || isLoading ? true : false;
+    const showLoading = minLoading || isLoading;
 
     return <DataContext.Provider value={{ data, showLoading }}>{children}</DataContext.Provider>;
 }
