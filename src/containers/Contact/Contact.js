@@ -55,6 +55,7 @@ export default function Contact() {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     />
+                    <p>Votre adresse e-mail ne sera utilisée que pour vous répondre</p>
                     <button>Envoyer</button>
                 </form>
             </div>
