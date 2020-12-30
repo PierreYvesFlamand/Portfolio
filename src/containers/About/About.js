@@ -1,10 +1,14 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
 import './About.css';
 
-export default function About(props) {
+import { DataContext } from '../../context/dataContext';
+
+export default function About() {
+    const { data } = useContext(DataContext);
+    const { text } = data.about;
+
     const ref = useRef();
     const [fadeIn, setFadeIn] = useState(false);
-    const { text } = props.data;
 
     useEffect(() => {
         const nodeRef = ref.current;

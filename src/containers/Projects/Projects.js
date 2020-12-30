@@ -1,10 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import './Projects.css';
+
+import { DataContext } from '../../context/dataContext';
+
 import ProjectModal from '../ProjectModal/ProjectModal';
 
-export default function Projects(props) {
-    const projects = props.data;
+export default function Projects() {
+    const { data } = useContext(DataContext);
+    const projects = data.projects;
 
     return (
         <section className='projects' id='mes-projets'>

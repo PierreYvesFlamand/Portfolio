@@ -1,11 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import './Header.css';
 
-export default function Header(props) {
+import { DataContext } from '../../context/dataContext';
+
+export default function Header() {
+    const { data } = useContext(DataContext);
+    const { subs, ctas } = data.header;
+
     const ref = useRef();
     const [fadeIn, setFadeIn] = useState(false);
-
-    const { subs, ctas } = props.data;
 
     useEffect(() => {
         const nodeRef = ref.current;
