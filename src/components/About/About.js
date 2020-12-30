@@ -1,28 +1,12 @@
-import React, { useRef, useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import './About.css';
 
 import { DataContext } from '../../context/dataContext';
+import FadeIn from '../../hooks/FadeIn';
 
 export default function About() {
-    const { data } = useContext(DataContext);
-    const { text } = data.about;
-
-    const ref = useRef();
-    const [fadeIn, setFadeIn] = useState(false);
-
-    useEffect(() => {
-        const nodeRef = ref.current;
-
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                setFadeIn(true);
-                observer.unobserve(nodeRef);
-            }
-        });
-        observer.observe(nodeRef);
-
-        return () => observer.unobserve(nodeRef);
-    }, []);
+    const { text } = useContext(DataContext).about;
+    const [ref, fadeIn] = FadeIn();
 
     return (
         <section className='about' id='a-propos'>

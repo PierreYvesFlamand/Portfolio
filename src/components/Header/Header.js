@@ -2,27 +2,11 @@ import React, { useEffect, useRef, useState, useContext } from 'react';
 import './Header.css';
 
 import { DataContext } from '../../context/dataContext';
+import FadeIn from '../../hooks/FadeIn';
 
 export default function Header() {
-    const { data } = useContext(DataContext);
-    const { subs, ctas } = data.header;
-
-    const ref = useRef();
-    const [fadeIn, setFadeIn] = useState(false);
-
-    useEffect(() => {
-        const nodeRef = ref.current;
-
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                setFadeIn(true);
-                observer.unobserve(nodeRef);
-            }
-        });
-        observer.observe(nodeRef);
-
-        return () => observer.unobserve(nodeRef);
-    }, []);
+    const { subs, ctas } = useContext(DataContext).header;
+    const [ref, fadeIn] = FadeIn();
 
     return (
         <header className='header'>

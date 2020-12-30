@@ -1,14 +1,13 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
-
+import React, { useState, useContext } from 'react';
 import './Projects.css';
 
 import { DataContext } from '../../context/dataContext';
+import FadeIn from '../../hooks/FadeIn';
 
 import ProjectModal from '../ProjectModal/ProjectModal';
 
 export default function Projects() {
-    const { data } = useContext(DataContext);
-    const projects = data.projects;
+    const projects = useContext(DataContext).projects;
 
     return (
         <section className='projects' id='mes-projets'>
@@ -27,23 +26,8 @@ export default function Projects() {
 function Project(props) {
     const { img } = props.data;
     const [modalOpen, setModalOpen] = useState(false);
+    const [ref, fadeIn] = FadeIn();
 
-    const ref = useRef();
-    const [fadeIn, setFadeIn] = useState(false);
-
-    useEffect(() => {
-        const nodeRef = ref.current;
-
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                setFadeIn(true);
-                observer.unobserve(nodeRef);
-            }
-        });
-        observer.observe(nodeRef);
-
-        return () => observer.unobserve(nodeRef);
-    }, []);
     return (
         <>
             {modalOpen ? <ProjectModal data={props.data} closeBtn={setModalOpen} /> : null}
