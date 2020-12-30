@@ -24,7 +24,7 @@
     margin: 0 auto;
     max-height: 90%;
     overflow-y: auto;
-    background-color: #343a41;
+    background-color: var(--bg-sec);
     box-shadow: 0 0 5px #000;
     position: relative;
     transform: scale(0.01);
@@ -50,7 +50,7 @@
     display: block;
     width: 100%;
     height: 14.8em;
-    background-color: #343a41;
+    background-color: var(--bg-sec);
     background-blend-mode: overlay;
     background-size: auto 100%;
     background-position: center;
@@ -58,7 +58,6 @@
 }
 
 .project-title {
-    color: #fff;
     letter-spacing: 2px;
     font-size: 1.6rem;
     margin: 0em 0 0.3em 0;
@@ -71,12 +70,12 @@
 }
 
 .project-tech span {
-    border: 1px solid #22262a;
+    border: 1px solid var(--bg-prim);
     font-size: 0.8rem;
     letter-spacing: 1px;
     padding: 0.3em;
     margin: 0.2em;
-    color: #94a4b4;
+    color: var(--clr-light);
 }
 
 .project-about {
@@ -84,7 +83,7 @@
     font-size: 0.95rem;
     margin: 0;
     margin-bottom: 0.4em;
-    color: #94a4b4;
+    color: var(--clr-light);
 }
 
 .project-about::after {
@@ -94,8 +93,8 @@
 .project-desc {
     height: 13em;
     overflow-y: auto;
-    color: #94a4b4;
-    font-family: 'Inconsolata', monospace;
+    color: var(--clr-light);
+    font-family: var(--ff-sec);
     font-size: 0.9rem;
     padding-right: 0.8em;
 }
@@ -110,8 +109,8 @@
 
 .project-link {
     text-decoration: none;
-    color: #000;
-    background: hsla(0, 0%, 100%, 0.7);
+    color: var(--clr-b);
+    background: rgba(255, 255, 255, 0.7);
     padding: 0.3em 0.9em;
     border-radius: 5px;
     display: inline-block;
@@ -126,7 +125,7 @@
 }
 
 .project-link:hover {
-    background: hsl(0, 0%, 100%);
+    background: rgb(255, 255, 255);
 }
 
 .close-btn {
@@ -146,7 +145,7 @@
     width: 1.6em;
     height: 0.3em;
     border-radius: 1em;
-    background: #94a4b4;
+    background: var(--clr-light);
     position: absolute;
     top: 0.8em;
     left: 0.2em;
@@ -185,7 +184,6 @@
     .project-tech span {
         padding: 0.4em;
         margin: 0.3em;
-        color: #94a4b4;
     }
 
     .project-desc {

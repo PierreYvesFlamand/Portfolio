@@ -1,12 +1,9 @@
 .about {
     min-height: 100vh;
-    background: #22262a;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Inconsolata', monospace;
 }
 
 .about-container {
@@ -31,15 +28,15 @@
 .about-container h2 {
     font-size: 2.2rem;
     letter-spacing: 1px;
-    font-family: 'Staatliches', sans-serif;
 }
 
 .about-container p {
     margin: 0.5em 0;
+    font-family: var(--ff-sec);
 }
 
 .about-container .cv-link {
-    color: #94a4b4;
+    color: var(--clr-light);
     cursor: pointer;
 
     transition: 150ms ease;
@@ -49,13 +46,8 @@
     color: inherit;
 }
 
-.cv-link i {
-    margin-left: 0.15em;
-    font-size: 1em;
-}
-
 .about-container .cv-link:hover {
-    color: #5b6570;
+    color: var(--clr-dark);
 }
 
 .about-content {
@@ -105,7 +97,6 @@
     grid-column: 2;
     width: max-content;
     margin-top: 1.1em;
-    font-family: 'Staatliches', sans-serif;
 }
 
 .about-container .hover {

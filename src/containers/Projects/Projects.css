@@ -1,6 +1,4 @@
 .projects {
-    /* min-height: 100vh; */
-    background: #22262a;
     padding: 3em 0;
 }
 
@@ -11,7 +9,6 @@
 
 .projects-header {
     font-size: 2.5rem;
-    color: white;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -26,7 +23,7 @@
 }
 
 .project {
-    background-color: rgb(26, 26, 26);
+    background-color: var(--bg-foot);
     box-shadow: 0 0 13px #000;
     cursor: pointer;
     overflow: hidden;
@@ -92,7 +89,7 @@
     font-size: 0.95rem;
     text-decoration: none;
     color: #000;
-    background: hsla(0, 0%, 100%, 0.75);
+    background: rgba(255, 255, 255, 0.75);
     padding: 0.4em 1.1em 0.3em;
     border-radius: 5px;
     display: inline-block;
@@ -102,7 +99,7 @@
 }
 
 .project .hover span:hover {
-    background: hsla(0, 0%, 100%, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     transform: scale(1.09);
 }
 

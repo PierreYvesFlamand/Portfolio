@@ -5,6 +5,7 @@
     left: 0;
     font-size: 1rem;
     z-index: 99;
+    transform: scale(0.95);
 }
 
 .aside-social ul {
@@ -63,7 +64,7 @@
 .aside-social a:link,
 .aside-social a:visited,
 .aside-social a:hover {
-    color: white;
+    color: var(--clr-w);
     text-decoration: none;
 }
 
@@ -80,6 +81,6 @@
 
 @media screen and (max-width: 800px) {
     .aside-social {
-        transform: scale(0.8);
+        transform: scale(0.75);
     }
 }

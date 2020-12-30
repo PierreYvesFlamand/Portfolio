@@ -2,7 +2,7 @@
     font-size: 2rem;
     position: fixed;
     background-color: #5b657034;
-    color: #94a4b4;
+    color: var(--clr-light);
     bottom: 0.5em;
     right: 0.5em;
     cursor: pointer;

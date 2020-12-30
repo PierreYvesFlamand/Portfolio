@@ -1,11 +1,10 @@
 .footer {
-    background-color: rgb(26, 26, 26);
-    color: #fff;
-    font-family: 'Inconsolata';
+    background-color: var(--bg-foot);
+    font-family: var(--ff-sec);
     font-weight: 400;
     margin: 0;
     font-size: 0.9rem;
-    border-top: 1px solid #94a4b4;
+    border-top: 1px solid var(--clr-light);
 }
 
 .footer-container {
@@ -32,12 +31,14 @@
 }
 
 .footer-container a {
-    color: #94a4b4;
+    color: var(--clr-light);
     text-decoration: underline;
+
+    transition: 150ms ease;
 }
 
 .footer-container a:hover {
-    text-decoration: none;
+    color: var(--clr-dark);
 }
 
 @media screen and (min-width: 500px) {

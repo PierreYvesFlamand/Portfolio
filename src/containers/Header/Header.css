@@ -1,7 +1,5 @@
 .header {
     min-height: 100vh;
-    background: #22262a;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +34,7 @@
 }
 
 .header-sub {
-    color: #94a4b4;
+    color: var(--clr-light);
     margin: 0.3em;
 }
 
@@ -55,7 +53,7 @@
 }
 
 .word-hover {
-    color: #5b6570;
+    color: var(--clr-dark);
 }
 
 .word.isActive .word-hover,
@@ -83,10 +81,10 @@
 
 .link {
     display: block;
-    color: #fff;
+    color: var(--clr-w);
     text-decoration: none;
     background-color: transparent;
-    border: 0.15em solid #fff;
+    border: 0.15em solid var(--clr-w);
     padding: 0.5em 1em;
     font-size: 1.2rem;
 
@@ -98,8 +96,8 @@
     display: block;
     color: #000;
     text-decoration: none;
-    background-color: #fff;
-    border: 0.15em solid #fff;
+    background-color: var(--clr-w);
+    border: 0.15em solid var(--clr-w);
     padding: 0.5em 1em;
     font-size: 1.2rem;
 

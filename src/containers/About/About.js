@@ -48,7 +48,6 @@ export default function About() {
                         <a href='CV_Pierre-Yves_Flamand.pdf' download>
                             Télécharger mon cv (53.8Ko)
                         </a>
-                        <i className='fas fa-download'></i>
                     </p>
                 </div>
 

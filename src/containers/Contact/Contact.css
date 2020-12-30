@@ -1,5 +1,4 @@
 .contact {
-    background: #22262a;
     padding-top: 6em;
 }
 
@@ -11,7 +10,6 @@
 
 .contact-header {
     font-size: 2.5rem;
-    color: white;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -22,6 +20,8 @@
     display: grid;
     grid-template-columns: 3rem 1fr;
     row-gap: 1.5em;
+    color: var(--clr-light);
+    font-family: var(--ff-sec);
 }
 
 .contact-form label {
@@ -35,7 +35,6 @@
 
 .contact-form i {
     font-size: 1.5rem;
-    color: #94a4b4;
     padding-left: 0.1rem;
 }
 
@@ -43,10 +42,10 @@
 .contact-form textarea {
     width: 100%;
     background: none;
+    color: inherit;
     border: none;
     border: 3px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.4em;
-    color: #94a4b4;
     resize: none;
     outline: none;
     font-size: 1.1rem;
@@ -57,12 +56,12 @@
 
 .contact-form input.hasValue:valid,
 .contact-form textarea.hasValue:valid {
-    border: 3px solid rgba(0, 255, 0, 0.3);
+    border: 3px solid rgba(0, 200, 0, 0.3);
 }
 
 .contact-form input.hasValue:invalid,
 .contact-form textarea.hasValue:invalid {
-    border: 3px solid rgba(255, 0, 0, 0.3);
+    border: 3px solid rgba(200, 0, 0, 0.3);
 }
 
 .contact-form input:focus,
@@ -76,14 +75,13 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #94a4b483;
+    color: var(--clr-light);
+    opacity: 0.5;
 }
 
 .contact-form p {
     margin: -1em 0;
     grid-column: 2;
-    font-family: 'Inconsolata';
-    color: #94a4b4;
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 300;
@@ -96,7 +94,7 @@
     background: none;
     border: 3px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.4em;
-    color: #94a4b4;
+    color: inherit;
     padding: 0.4em 0.8em;
     font-size: 1rem;
     letter-spacing: 0.5px;
@@ -104,7 +102,7 @@
     justify-self: flex-end;
     outline: none;
 
-    transition: border 200ms ease-in;
+    transition: all 150ms ease-in;
 }
 
 .contact-form button:hover,

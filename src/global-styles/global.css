@@ -4,17 +4,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Staatliches&display=swap');
 
+:root {
+    --ff-prim: 'Staatliches', sans-serif;
+    --ff-sec: 'Inconsolata', monospace;
+
+    --clr-w: #fff;
+    --clr-b: #000;
+    --clr-light: #94a4b4;
+    --clr-dark: #5b6570;
+
+    --bg-prim: #22262a;
+    --bg-sec: #343a41;
+    --bg-foot: #1a1a1a;
+}
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Staatliches', sans-serif;
+    background: var(--bg-prim);
+    font-family: var(--ff-prim);
+    color: var(--clr-w);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #22262a;
+    background-color: var(--bg-prim);
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +38,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #94a4b4;
+    background-color: var(--clr-light);
     border: 0;
     border-radius: 50px;
 }
@@ -46,11 +62,11 @@ h2::after {
     left: -10%;
     width: 120%;
     height: 1em;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--clr-w);
 }
 
 .loading-screen {
-    background-color: #22262a;
+    background-color: var(--bg-prim);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,5 +76,5 @@ h2::after {
 input,
 textarea,
 button {
-    font-family: 'Inconsolata';
+    font-family: var(--ff-sec);
 }
