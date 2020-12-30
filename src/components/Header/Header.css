@@ -5,30 +5,31 @@
     justify-content: center;
     align-items: center;
     cursor: default;
+    text-transform: uppercase;
 }
 
 .header-container {
     margin: 0 auto;
-    padding: 0 1.1em;
-    opacity: 0;
+    padding: 3em 1.7em;
     max-width: 55rem;
-    transform: scale(0.4);
 
+    opacity: 0;
+    transform: scale(0.4);
     transition: all 800ms;
 }
 
-.header-text {
+.header-content {
     text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.5px;
 }
 
-.header-h1 {
-    font-size: 6.5rem;
+.header-title {
+    font-size: 4rem;
     letter-spacing: 0.7px;
 }
 
 .header-sub {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
     color: var(--clr-light);
     margin: 0.3em;
 }
@@ -56,25 +57,27 @@
     transform: translateY(-100%);
 }
 
-/* CTAS */
+/********************/
+/******* CTAS *******/
+/********************/
 
 .header-ctas {
-    max-width: 55rem;
     margin: 3em auto -1em;
     padding: 0 3.5em;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .header-cta {
     display: block;
+    width: max-content;
     text-decoration: none;
     height: 2.9em;
     overflow: hidden;
-    text-transform: uppercase;
 }
 
-.link {
+.base {
     display: block;
     color: var(--clr-w);
     text-decoration: none;
@@ -100,7 +103,7 @@
     transition: transform 150ms;
 }
 
-.header-cta:hover .link {
+.header-cta:hover .base {
     transform: translateY(-5%);
 }
 
@@ -108,31 +111,35 @@
     transform: translateY(0%);
 }
 
-@media screen and (max-width: 600px) {
-    .header-text {
-        font-size: 1.5rem;
-        letter-spacing: 0.5px;
-    }
+.header-cta:first-of-type {
+    margin-bottom: 2em;
+}
 
-    .header-h1 {
-        font-size: 4rem;
-        letter-spacing: 0.7px;
-    }
-
+@media screen and (min-width: 600px) {
     .header-container {
-        padding: 3em 1.5em;
+        padding: 0 1.7em;
+    }
+
+    .header-title {
+        font-size: 6.5rem;
+    }
+
+    .header-sub {
+        font-size: 2rem;
     }
 
     .header-ctas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-cta {
-        width: max-content;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .header-cta:first-of-type {
-        margin-bottom: 2em;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-container {
+        padding: 0;
     }
 }

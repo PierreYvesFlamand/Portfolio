@@ -15,8 +15,8 @@ export default function Header() {
                 style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null}
                 ref={ref}
             >
-                <div className='header-text'>
-                    <h1 className='header-h1'>{title}</h1>
+                <div className='header-content'>
+                    <h1 className='header-title'>{title}</h1>
 
                     {subs.map((sub, idxSub) => {
                         return (
@@ -71,7 +71,7 @@ function Ctas({ data }) {
                         }}
                     >
                         <span className='hover'>{cta.replace(/-/g, '  ')}</span>
-                        <span className='link'>{cta.replace(/-/g, '  ')}</span>
+                        <span className='base'>{cta.replace(/-/g, '  ')}</span>
                     </a>
                 );
             })}
