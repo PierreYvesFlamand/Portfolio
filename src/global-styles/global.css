@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Staatliches&display=swap');
 
+/* Variables */
 :root {
     --ff-prim: 'Staatliches', sans-serif;
     --ff-sec: 'Inconsolata', monospace;
@@ -18,17 +19,7 @@
     --bg-foot: #1a1a1a;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body {
-    background: var(--bg-prim);
-    font-family: var(--ff-prim);
-    color: var(--clr-w);
-}
-
+/* Custom scrollbar */
 ::-webkit-scrollbar-track {
     background-color: var(--bg-prim);
 }
@@ -41,6 +32,18 @@ body {
     background-color: var(--clr-light);
     border: 0;
     border-radius: 50px;
+}
+
+/* Generic css*/
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-prim);
+    font-family: var(--ff-prim);
+    color: var(--clr-w);
 }
 
 h1,
@@ -71,10 +74,4 @@ h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-input,
-textarea,
-button {
-    font-family: var(--ff-sec);
 }
