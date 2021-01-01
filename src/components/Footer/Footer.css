@@ -8,7 +8,7 @@
 }
 
 .footer-container {
-    max-width: max-content;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,15 +19,13 @@
 }
 
 .footer-container p {
-    margin: 0;
-    padding: 0.4em 0;
-
-    display: flex;
-    flex-direction: column;
+    margin: 0.35em;
 }
 
-.footer-container p span:first-of-type {
-    margin-bottom: 0.75em;
+.footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-container a {
@@ -39,15 +37,4 @@
 
 .footer-container a:hover {
     color: var(--clr-dark);
-}
-
-@media screen and (min-width: 500px) {
-    .footer-container p {
-        flex-direction: row;
-    }
-
-    .footer-container p span:first-of-type {
-        margin-bottom: 0.1em;
-        margin-right: 0.5em;
-    }
 }
