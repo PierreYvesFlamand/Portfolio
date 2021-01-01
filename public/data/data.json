@@ -45,8 +45,8 @@
 
     "projects": [
         {
-            "githubName": "Portfolio",
             "title": "Portfolio",
+            "img": "https://pierreyvesflamand.github.io/Portfolio/project-img.png",
             "techs": ["html", "css", "javascript", "React", "Responsive", "sass"],
             "desc": [
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
@@ -61,48 +61,20 @@
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!"
-            ]
+            ],
+            "demoLink": null,
+            "codeLink": "https://github.com/PierreYvesFlamand/Portfolio"
         },
         {
-            "githubName": "Chess",
             "title": "Jeu d'échec",
+            "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
             "techs": ["html", "css", "javascript", "React", "Responsive", "sass"],
             "desc": [
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!"
-            ]
-        },
-        {
-            "githubName": "Chess",
-            "title": "Jeu d'échec",
-            "techs": ["html", "css", "javascript", "React", "Responsive", "sass"],
-            "desc": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!"
-            ]
-        },
-        {
-            "githubName": "Chess",
-            "title": "Jeu d'échec",
-            "techs": ["html", "css", "javascript", "React", "Responsive", "sass"],
-            "desc": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!"
-            ]
+            ],
+            "demoLink": "https://pierreyvesflamand.github.io/Chess/",
+            "codeLink": "https://github.com/PierreYvesFlamand/Chess"
         }
     ]
 }

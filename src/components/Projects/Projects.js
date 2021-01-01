@@ -25,7 +25,7 @@ export default function Projects() {
 }
 
 function Project({ data }) {
-    const { githubName } = data;
+    const { img } = data;
     const [modalOpen, setModalOpen] = useState(false);
     const [ref, fadeIn] = FadeIn();
 
@@ -44,7 +44,7 @@ function Project({ data }) {
                 <div
                     className='img'
                     style={{
-                        backgroundImage: `url(https://pierreyvesflamand.github.io/${githubName}/project-img.png)`,
+                        backgroundImage: `url(${img}`,
                     }}
                 ></div>
                 <div className='hover'>

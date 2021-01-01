@@ -4,7 +4,7 @@ import './ProjectModal.css';
 
 export default function ProjectModal({ data, closeBtn }) {
     const [mounted, setMounted] = useState(false);
-    const { githubName, title, techs, desc } = data;
+    const { img, title, techs, desc, demoLink, codeLink } = data;
 
     useEffect(() => {
         setMounted(true);
@@ -24,7 +24,7 @@ export default function ProjectModal({ data, closeBtn }) {
                 <div
                     className='project-img'
                     style={{
-                        backgroundImage: `url(https://pierreyvesflamand.github.io/${githubName}/project-img.png)`,
+                        backgroundImage: `url(${img})`,
                     }}
                 ></div>
                 <div className='project-content'>
@@ -40,20 +40,13 @@ export default function ProjectModal({ data, closeBtn }) {
                         ))}
                     </div>
                     <div className='project-links'>
-                        <a
-                            className='project-link'
-                            href={`https://pierreyvesflamand.github.io/${githubName}`}
-                            target='_blank'
-                            rel='noreferrer'
-                        >
-                            <i className='far fa-eye'></i>DEMO
-                        </a>
-                        <a
-                            className='project-link'
-                            href={`https://github.com/PierreYvesFlamand/${githubName}`}
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        {demoLink ? (
+                            <a className='project-link' href={demoLink} target='_blank' rel='noreferrer'>
+                                <i className='far fa-eye'></i>DEMO
+                            </a>
+                        ) : null}
+
+                        <a className='project-link' href={codeLink} target='_blank' rel='noreferrer'>
                             <i className='fas fa-code'></i>CODE
                         </a>
                     </div>
