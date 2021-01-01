@@ -3,14 +3,16 @@ import './About.css';
 
 import { DataContext } from '../../context/dataContext';
 import FadeIn from '../../hooks/FadeIn';
+import Ctas from '../Ctas/Ctas';
 
 export default function About() {
     const { text } = useContext(DataContext).data.about;
     const { link } = useContext(DataContext).data.asideSocial[3];
+    const { ctas } = useContext(DataContext).data.header;
     const [ref, fadeIn] = FadeIn();
 
     return (
-        <section className='about' id='a-propos'>
+        <section className='about' id='about'>
             <div
                 className='about-container'
                 style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null}
@@ -42,19 +44,7 @@ export default function About() {
                         );
                     })}
                 </div>
-
-                {/* <a
-                    className='header-cta'
-                    href='#mes-projets'
-                    onClick={() => {
-                        setTimeout(() => {
-                            window.history.replaceState({}, document.title, '/');
-                        }, 1);
-                    }}
-                >
-                    <span className='hover'>mes projets</span>
-                    <span className='base'>mes projets</span>
-                </a> */}
+                <Ctas className='about-project-link' ctas={[false, ctas[1]]} />
             </div>
         </section>
     );

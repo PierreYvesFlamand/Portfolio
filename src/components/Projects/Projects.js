@@ -10,7 +10,7 @@ export default function Projects() {
     const projects = useContext(DataContext).data.projects;
 
     return (
-        <section className='projects' id='mes-projets'>
+        <section className='projects' id='projects'>
             <div className='projects-container'>
                 <h2 className='projects-header'>Mes Projets</h2>
                 <div className='all-projetcs'>

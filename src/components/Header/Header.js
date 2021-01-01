@@ -3,6 +3,7 @@ import './Header.css';
 
 import { DataContext } from '../../context/dataContext';
 import FadeIn from '../../hooks/FadeIn';
+import Ctas from '../Ctas/Ctas';
 
 export default function Header() {
     const { title, subs, ctas } = useContext(DataContext).data.header;
@@ -28,7 +29,8 @@ export default function Header() {
                         );
                     })}
                 </div>
-                <Ctas data={ctas} />
+
+                <Ctas ctas={ctas} />
             </div>
         </header>
     );
@@ -52,29 +54,5 @@ function Word({ word }) {
             <span className='word-base'>{word}</span>
             <span className='word-hover'>{word}</span>
         </span>
-    );
-}
-
-function Ctas({ data }) {
-    return (
-        <div className='header-ctas'>
-            {data.map((cta, idx) => {
-                return (
-                    <a
-                        key={`cta-${idx}`}
-                        className='header-cta'
-                        href={`#${cta}`}
-                        onClick={() => {
-                            setTimeout(() => {
-                                window.history.replaceState({}, document.title, '/');
-                            }, 1);
-                        }}
-                    >
-                        <span className='hover'>{cta.replace(/-/g, '  ')}</span>
-                        <span className='base'>{cta.replace(/-/g, '  ')}</span>
-                    </a>
-                );
-            })}
-        </div>
     );
 }

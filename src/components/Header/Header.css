@@ -57,64 +57,6 @@
     transform: translateY(-100%);
 }
 
-/********************/
-/******* CTAS *******/
-/********************/
-
-.header-ctas {
-    margin: 3em auto -1em;
-    padding: 0 3.5em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.header-cta {
-    display: block;
-    width: max-content;
-    text-decoration: none;
-    height: 2.9em;
-    overflow: hidden;
-}
-
-.base {
-    display: block;
-    color: var(--clr-w);
-    text-decoration: none;
-    background-color: transparent;
-    border: 0.15em solid var(--clr-w);
-    padding: 0.5em 1em;
-    font-size: 1.2rem;
-
-    transform: translateY(-100%);
-    transition: transform 150ms;
-}
-
-.hover {
-    display: block;
-    color: #000;
-    text-decoration: none;
-    background-color: var(--clr-w);
-    border: 0.15em solid var(--clr-w);
-    padding: 0.5em 1em;
-    font-size: 1.2rem;
-
-    transform: translateY(-100%);
-    transition: transform 150ms;
-}
-
-.header-cta:hover .base {
-    transform: translateY(-5%);
-}
-
-.header-cta:hover .hover {
-    transform: translateY(0%);
-}
-
-.header-cta:first-of-type {
-    margin-bottom: 2em;
-}
-
 @media screen and (min-width: 600px) {
     .header-container {
         padding: 0 1.7em;
@@ -126,15 +68,6 @@
 
     .header-sub {
         font-size: 2rem;
-    }
-
-    .header-ctas {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .header-cta:first-of-type {
-        margin-bottom: 0;
     }
 }
 
