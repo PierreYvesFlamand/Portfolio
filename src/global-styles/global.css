@@ -56,6 +56,7 @@ h2 {
     position: relative;
     max-width: max-content;
     margin: 0 auto 1.2em auto;
+    text-transform: uppercase;
 }
 
 h2::after {

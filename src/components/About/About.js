@@ -18,7 +18,7 @@ export default function About() {
                 style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null}
                 ref={ref}
             >
-                <h2>A propos</h2>
+                <h2>{ctas[0]}</h2>
 
                 <div className='about-tech'>
                     <i className='fab fa-html5 html'></i>

@@ -8,11 +8,12 @@ import ProjectModal from '../ProjectModal/ProjectModal';
 
 export default function Projects() {
     const projects = useContext(DataContext).data.projects;
+    const { ctas } = useContext(DataContext).data.header;
 
     return (
         <section className='projects' id='projects'>
             <div className='projects-container'>
-                <h2 className='projects-header'>Mes Projets</h2>
+                <h2 className='projects-header'>{ctas[1]}</h2>
                 <div className='all-projetcs'>
                     {projects.map((project, idx) => (
                         <Project key={idx} data={project} />
@@ -31,15 +32,17 @@ function Project(props) {
     return (
         <>
             {modalOpen ? <ProjectModal data={props.data} closeBtn={setModalOpen} /> : null}
-            <div className='project' style={fadeIn ? { transform: 'scale(1)', opacity: 1 } : null} ref={ref}>
+            <div
+                className='project'
+                style={fadeIn ? { transform: 'scale(1)', opacity: '1' } : null}
+                ref={ref}
+                onClick={() => {
+                    document.body.style.overflow = 'hidden';
+                    setModalOpen(true);
+                }}
+            >
                 <div className='img' style={{ backgroundImage: `url(./data/img/projects/${img})` }}></div>
-                <div
-                    className='hover'
-                    onClick={() => {
-                        document.body.style.overflow = 'hidden';
-                        setModalOpen(true);
-                    }}
-                >
+                <div className='hover'>
                     <span>
                         <i className='far fa-eye'></i>VIEW PROJECT
                     </span>
