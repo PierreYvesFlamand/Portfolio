@@ -14,7 +14,9 @@ export default function Footer() {
                         Tel: <a href='tel:+32472235311'>+32 472 23 53 11</a>
                     </p>
                 </div>
-                <p>© 2021 Pierre-Yves Flamand</p>
+                <p>
+                    <span className='copy'>©</span> 2021 Pierre-Yves Flamand
+                </p>
                 <p>All Rights Reseved</p>
             </div>
         </footer>
