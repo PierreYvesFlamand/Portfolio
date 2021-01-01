@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
 import './Contact.css';
 
+import { DataContext } from '../../context/dataContext';
+
 export default function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [nameInput, setNameInput] = useState('');
+    const [emailInput, setEmailInput] = useState('');
+    const [messageInput, setMessageInput] = useState('');
+
+    const { name, email, message, disclamer, button } = useContext(DataContext).data.contact;
 
     return (
         <section className='contact' id='contactez-moi'>
@@ -16,47 +19,47 @@ export default function Contact() {
                         <i className='fas fa-user'></i>
                     </label>
                     <input
-                        className={name.length > 0 ? 'hasValue' : null}
+                        className={nameInput.length > 0 ? 'hasValue' : null}
                         type='text'
                         name='name'
                         id='name'
-                        placeholder='Votre Nom'
+                        placeholder={name}
                         autoComplete='false'
                         required
                         minLength={3}
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        value={nameInput}
+                        onChange={(e) => setNameInput(e.target.value)}
                     />
                     <label htmlFor='email'>
                         <i className='fas fa-envelope'></i>
                     </label>
                     <input
-                        className={email.length > 0 ? 'hasValue' : null}
+                        className={emailInput.length > 0 ? 'hasValue' : null}
                         type='email'
                         name='email'
                         id='email'
-                        placeholder='Votre E-mail'
+                        placeholder={email}
                         autoComplete='false'
                         required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={emailInput}
+                        onChange={(e) => setEmailInput(e.target.value)}
                     />
                     <label htmlFor='message'>
                         <i className='fas fa-comment'></i>
                     </label>
                     <textarea
-                        className={message.length > 0 ? 'hasValue' : null}
+                        className={messageInput.length > 0 ? 'hasValue' : null}
                         name='message'
                         id='message'
-                        placeholder='Votre message...'
+                        placeholder={message}
                         autoComplete='false'
                         required
                         maxLength={3000}
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        value={messageInput}
+                        onChange={(e) => setMessageInput(e.target.value)}
                     />
-                    <p>Votre adresse E-mail ne sera utilisée que pour vous répondre</p>
-                    <button>Envoyer</button>
+                    <p>{disclamer}</p>
+                    <button>{button}</button>
                 </form>
             </div>
         </section>

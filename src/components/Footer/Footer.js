@@ -7,7 +7,7 @@ export default function Footer() {
             <div className='footer-container'>
                 <div className='footer-contact'>
                     <p>
-                        Email:{' '}
+                        E-mail:{' '}
                         <a href='mailto:contact@pierreyvesflamand.com'>contact@pierreyvesflamand.com</a>
                     </p>
                     <p>
