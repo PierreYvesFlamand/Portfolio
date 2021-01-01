@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import './BackToTop.css';
 
 export default function BackToTop() {
