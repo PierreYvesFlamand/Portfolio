@@ -49,6 +49,10 @@
     max-width: 520px;
 }
 
+.ctas-container {
+    margin-top: 1.5em;
+}
+
 .about-tech {
     width: 100%;
     display: flex;
