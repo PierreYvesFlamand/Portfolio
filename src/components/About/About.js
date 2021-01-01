@@ -6,6 +6,7 @@ import FadeIn from '../../hooks/FadeIn';
 
 export default function About() {
     const { text } = useContext(DataContext).data.about;
+    const { link } = useContext(DataContext).data.asideSocial[3];
     const [ref, fadeIn] = FadeIn();
 
     return (
@@ -29,17 +30,20 @@ export default function About() {
                 </div>
 
                 <div className='about-content'>
-                    {text.map((text, idx) => (
-                        <p key={idx}>{text}</p>
-                    ))}
-                    <p className='cv-link'>
-                        <a href='CV_Pierre-Yves_Flamand.pdf' download>
-                            Télécharger mon cv (53.8Ko)
-                        </a>
-                    </p>
+                    {text.map((item, idx) => {
+                        return idx !== text.length - 1 ? (
+                            <p key={idx}>{item}</p>
+                        ) : (
+                            <p key={idx} className='cv-link'>
+                                <a href={link} download>
+                                    {item}
+                                </a>
+                            </p>
+                        );
+                    })}
                 </div>
 
-                <a
+                {/* <a
                     className='header-cta'
                     href='#mes-projets'
                     onClick={() => {
@@ -49,8 +53,8 @@ export default function About() {
                     }}
                 >
                     <span className='hover'>mes projets</span>
-                    <span className='link'>mes projets</span>
-                </a>
+                    <span className='base'>mes projets</span>
+                </a> */}
             </div>
         </section>
     );

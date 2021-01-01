@@ -88,20 +88,6 @@
     color: #eb4a4b;
 }
 
-.about-container .header-cta {
-    grid-column: 2;
-    width: max-content;
-    margin-top: 1.1em;
-}
-
-.about-container .hover {
-    padding-bottom: 0.7em;
-}
-
-.about-container .link {
-    margin-top: -0.2em;
-}
-
 @media screen and (min-width: 1000px) {
     .about-container {
         padding: 0;
