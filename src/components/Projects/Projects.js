@@ -24,14 +24,14 @@ export default function Projects() {
     );
 }
 
-function Project(props) {
-    const { img } = props.data;
+function Project({ data }) {
+    const { githubName } = data;
     const [modalOpen, setModalOpen] = useState(false);
     const [ref, fadeIn] = FadeIn();
 
     return (
         <>
-            {modalOpen ? <ProjectModal data={props.data} closeBtn={setModalOpen} /> : null}
+            {modalOpen ? <ProjectModal data={data} closeBtn={setModalOpen} /> : null}
             <div
                 className='project'
                 style={fadeIn ? { transform: 'scale(1)', opacity: '1' } : null}
@@ -41,7 +41,12 @@ function Project(props) {
                     setModalOpen(true);
                 }}
             >
-                <div className='img' style={{ backgroundImage: `url(./data/img/projects/${img})` }}></div>
+                <div
+                    className='img'
+                    style={{
+                        backgroundImage: `url(https://pierreyvesflamand.github.io/${githubName}/project-img.png)`,
+                    }}
+                ></div>
                 <div className='hover'>
                     <span>
                         <i className='far fa-eye'></i>VIEW PROJECT
