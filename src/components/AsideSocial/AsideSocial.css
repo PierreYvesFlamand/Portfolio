@@ -5,7 +5,7 @@
     left: 0;
     font-size: 1rem;
     z-index: 99;
-    transform: scale(0.95);
+    transform: scale(0.75);
 }
 
 .aside-social ul {
@@ -30,27 +30,27 @@
     left: -1em;
 }
 
-.aside-social .aside-social-linkedin {
+.aside-social .linkedin {
     top: -7em;
     background-color: #0077b5;
 }
 
-.aside-social .aside-social-github {
+.aside-social .github {
     top: -3.5em;
     background-color: #333333;
 }
 
-.aside-social .aside-social-email {
+.aside-social .email {
     top: 0;
     background-color: #c73939;
 }
 
-.aside-social .aside-social-resume {
+.aside-social .resume {
     top: 3.5em;
     background-color: #6eb8bf;
 }
 
-.aside-social .aside-social-resume i {
+.aside-social .resume i {
     padding-right: 0.1em;
 }
 
@@ -79,8 +79,8 @@
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .aside-social {
-        transform: scale(0.75);
+        transform: scale(0.95);
     }
 }
