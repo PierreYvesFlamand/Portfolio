@@ -45,8 +45,8 @@
 
     "projects": [
         {
-            "githubName": "Chess",
-            "title": "Jeu d'échec",
+            "githubName": "Portfolio",
+            "title": "Portfolio",
             "techs": ["html", "css", "javascript", "React", "Responsive", "sass"],
             "desc": [
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
