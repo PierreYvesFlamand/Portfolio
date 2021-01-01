@@ -15,6 +15,25 @@
         ]
     },
 
+    "asideSocial": [
+        {
+            "text": "linkedin",
+            "link": "https://www.linkedin.com/in/pierreyvesflamand/"
+        },
+        {
+            "text": "github",
+            "link": "https://github.com/pierreyvesflamand"
+        },
+        {
+            "text": "email",
+            "link": "mailto:contact@pierreyvesflamand.com"
+        },
+        {
+            "text": "mon cv",
+            "link": "CV_Pierre-Yves_Flamand.pdf"
+        }
+    ],
+
     "projects": [
         {
             "img": "avatar.png",
