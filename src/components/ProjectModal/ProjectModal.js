@@ -51,7 +51,13 @@ export default function ProjectModal({ data, closeBtn }) {
                     </div>
                     <div className='project-links'>
                         {demoLink ? (
-                            <a className='project-link' href={demoLink} target='_blank' rel='noreferrer'>
+                            <a
+                                className='project-link'
+                                href={demoLink}
+                                target='_blank'
+                                rel='noreferrer'
+                                title={`Demo de ${title}`}
+                            >
                                 <i className='far fa-eye'></i>DEMO
                             </a>
                         ) : null}
@@ -63,6 +69,9 @@ export default function ProjectModal({ data, closeBtn }) {
                                 href={codeLink}
                                 target='_blank'
                                 rel='noreferrer'
+                                title={`Code source de ${codeLink
+                                    .split('/')
+                                    [codeLink.split('/').length - 1].replace(/-/g, ' ')}`}
                             >
                                 <i className='fas fa-code'></i>CODE
                             </a>
