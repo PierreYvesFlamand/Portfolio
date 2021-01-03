@@ -20,7 +20,12 @@ export default function ProjectModal({ data, closeBtn }) {
 
     return (
         <div onClick={closeModal} className={`project-modal ${mounted ? 'show' : ''}`}>
-            <article className='project-container'>
+            <article
+                onClick={(e) => {
+                    e.stopPropagation();
+                }}
+                className='project-container'
+            >
                 <div
                     className='project-img'
                     style={{
