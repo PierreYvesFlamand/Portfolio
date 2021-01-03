@@ -58,9 +58,21 @@
             "codeLink": "https://github.com/PierreYvesFlamand/Portfolio"
         },
         {
+            "title": "Kore",
+            "img": "https://pierreyvesflamand.github.io/Kore/project-img.png",
+            "techs": ["Html", "Css", "Sass", "JavaScript", "Responsive", "Mobile First", "Gulp"],
+            "desc": [
+                "Site web one page de présentation de servives d'une société réalisé dans le cadre de ma formation à Saint-Laurent.",
+                "Point important : La barre de navigation réagit en temps réel par rapport à la position dans le site",
+                "Les icônes proviennent de fontawesome.com."
+            ],
+            "demoLink": "https://pierreyvesflamand.github.io/Kore/build",
+            "codeLink": "https://github.com/PierreYvesFlamand/Kore"
+        },
+        {
             "title": "Jeu d'échec",
             "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
-            "techs": ["Html", "Css", "JavaScript", "Sass", "Gulp"],
+            "techs": ["Html", "Css", "Sass", "JavaScript", "Gulp"],
             "desc": [
                 "Reproduction d'un jeu d'échec et de quelque règles communues en vanilla JavaScript",
                 "Les icônes proviennent de fontawesome.com."
