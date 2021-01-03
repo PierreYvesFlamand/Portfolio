@@ -4,7 +4,12 @@ import './ProjectModal.css';
 
 export default function ProjectModal({ data, closeBtn }) {
     const [mounted, setMounted] = useState(false);
-    const { img, title, techs, desc, demoLink, codeLink } = data;
+    const { img, title, techs, desc, demoLink } = data;
+    let { codeLink } = data;
+
+    if (!Array.isArray(codeLink)) {
+        codeLink = [codeLink];
+    }
 
     useEffect(() => {
         setMounted(true);
@@ -51,9 +56,17 @@ export default function ProjectModal({ data, closeBtn }) {
                             </a>
                         ) : null}
 
-                        <a className='project-link' href={codeLink} target='_blank' rel='noreferrer'>
-                            <i className='fas fa-code'></i>CODE
-                        </a>
+                        {codeLink.map((codeLink, idx) => (
+                            <a
+                                key={idx}
+                                className='project-link'
+                                href={codeLink}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <i className='fas fa-code'></i>CODE
+                            </a>
+                        ))}
                     </div>
                 </div>
                 <div onClick={closeModal} className='close-btn'></div>
