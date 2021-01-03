@@ -48,7 +48,7 @@
         {
             "title": "Portfolio",
             "img": "https://pierreyvesflamand.github.io/Portfolio/project-img.png",
-            "techs": ["Html", "Css", "Javascript", "React", "Responsive", "Webpack"],
+            "techs": ["Html", "Css", "JavaScript", "React", "Responsive", "Webpack"],
             "desc": [
                 "Ce portfolio, construit avec React, à pour but de me présenter et mes projets sans trop de fioritures.",
                 "Chacun des composents fonctionnent de manières autonome et le contenu de chacun d'entre eux est personnalisable.",
@@ -60,12 +60,12 @@
         {
             "title": "Jeu d'échec",
             "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
-            "techs": ["html", "css", "javascript"],
+            "techs": ["Html", "Css", "JavaScript", "Sass", "Gulp"],
             "desc": [
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.",
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur quaerat quasi ipsum eius. Eligendi!"
+                "Reproduction d'un jeu d'échec et de quelque règles communues en vanilla JavaScript",
+                "Les icônes proviennent de fontawesome.com."
             ],
-            "demoLink": "https://pierreyvesflamand.github.io/Chess/",
+            "demoLink": "https://pierreyvesflamand.github.io/Chess/build",
             "codeLink": "https://github.com/PierreYvesFlamand/Chess"
         }
     ]
