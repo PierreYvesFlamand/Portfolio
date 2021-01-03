@@ -93,7 +93,7 @@
         },
         {
             "title": "JavaScript Challenges",
-            "img": "",
+            "img": "./data/img/JavaScript-Challenges.png",
             "techs": ["JavaScript"],
             "desc": [
                 "Les challenges JavaScript et l'optimisation sont des loisirs auquelles je consacre du temps. Voici une liste des certaines de mes réalisations",
