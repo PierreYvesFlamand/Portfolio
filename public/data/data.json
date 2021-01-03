@@ -90,6 +90,21 @@
             ],
             "demoLink": "https://pierreyvesflamand.github.io/Chess/build",
             "codeLink": "https://github.com/PierreYvesFlamand/Chess"
+        },
+        {
+            "title": "JavaScript Challenges",
+            "img": "",
+            "techs": ["JavaScript"],
+            "desc": [
+                "Les challenges JavaScript et l'optimisation sont des loisirs auquelles je consacre du temps. Voici une liste des certaines de mes réalisation :",
+                "- Scrimba 24 days of JavaScriptmas",
+                "- Project Euler Problems"
+            ],
+            "demoLink": null,
+            "codeLink": [
+                "https://github.com/PierreYvesFlamand/Scrimba-24-days-of-JavaScriptmas",
+                "https://github.com/PierreYvesFlamand/Project-Euler"
+            ]
         }
     ]
 }
