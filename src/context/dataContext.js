@@ -7,7 +7,7 @@ function DataContextProvider({ children }) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        setTimeout(() => setMinLoading(false), 1); // 850
+        setTimeout(() => setMinLoading(false), 850); // 850
 
         fetch('./data/data.json')
             .then((res) => res.json())
