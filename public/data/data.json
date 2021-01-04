@@ -82,17 +82,6 @@
             "codeLink": "https://github.com/PierreYvesFlamand/IslWeb"
         },
         {
-            "title": "Jeu d'échec",
-            "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
-            "techs": ["Html", "Css", "Sass", "JavaScript", "Gulp"],
-            "desc": [
-                "Reproduction d'un jeu d'échec et de quelque règles communues à celui-ci en vanilla JavaScript",
-                "Les icônes proviennent de fontawesome.com."
-            ],
-            "demoLink": "https://pierreyvesflamand.github.io/Chess/build",
-            "codeLink": "https://github.com/PierreYvesFlamand/Chess"
-        },
-        {
             "title": "JavaScript Challenges",
             "img": "./data/img/JavaScript-Challenges.png",
             "techs": ["JavaScript"],
@@ -106,6 +95,17 @@
                 "https://github.com/PierreYvesFlamand/Scrimba-24-days-of-JavaScriptmas",
                 "https://github.com/PierreYvesFlamand/Project-Euler"
             ]
+        },
+        {
+            "title": "Jeu d'échec",
+            "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
+            "techs": ["Html", "Css", "Sass", "JavaScript", "Gulp"],
+            "desc": [
+                "Reproduction d'un jeu d'échec et de quelque règles communues à celui-ci en vanilla JavaScript",
+                "Les icônes proviennent de fontawesome.com."
+            ],
+            "demoLink": "https://pierreyvesflamand.github.io/Chess/build",
+            "codeLink": "https://github.com/PierreYvesFlamand/Chess"
         }
     ]
 }
