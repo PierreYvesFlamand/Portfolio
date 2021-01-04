@@ -25,7 +25,7 @@ export default function Projects() {
 }
 
 function Project({ data }) {
-    const { img } = data;
+    const { react = false, img } = data;
     const [modalOpen, setModalOpen] = useState(false);
     const [ref, fadeIn] = FadeIn();
 
@@ -47,6 +47,7 @@ function Project({ data }) {
                         backgroundImage: `url(${img}`,
                     }}
                 ></div>
+                {react && <i className='fab fa-react react react-tag'></i>}
                 <div className='hover'>
                     <span>
                         <i className='far fa-eye'></i>VIEW PROJECT

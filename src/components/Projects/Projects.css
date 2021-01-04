@@ -58,6 +58,13 @@
     transform: scale(1.2);
 }
 
+.project .react-tag {
+    position: absolute;
+    top: 0.3em;
+    right: 0.4em;
+    font-size: 1.3rem;
+}
+
 .project .hover {
     position: absolute;
     top: 0;
