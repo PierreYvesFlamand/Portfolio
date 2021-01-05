@@ -47,12 +47,12 @@ function Project({ data }) {
                         backgroundImage: `url(${img}`,
                     }}
                 ></div>
-                {react && <i className='fab fa-react react react-tag'></i>}
                 <div className='hover'>
                     <span>
                         <i className='far fa-eye'></i>VIEW PROJECT
                     </span>
                 </div>
+                {react && <i className='fab fa-react react react-tag'></i>}
             </div>
         </>
     );
