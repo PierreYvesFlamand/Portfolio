@@ -101,11 +101,22 @@
             "img": "https://pierreyvesflamand.github.io/Chess/project-img.png",
             "techs": ["Html", "Css", "Sass", "JavaScript", "Gulp"],
             "desc": [
-                "Reproduction d'un jeu d'échec et de quelque règles communues à celui-ci en vanilla JavaScript",
+                "Reproduction d'un jeu d'échec et de quelque règles communues à celui-ci en vanilla JavaScript.",
                 "Les icônes proviennent de fontawesome.com."
             ],
             "demoLink": "https://pierreyvesflamand.github.io/Chess/build",
             "codeLink": "https://github.com/PierreYvesFlamand/Chess"
+        },
+        {
+            "title": "Démineur",
+            "img": "https://pierreyvesflamand.github.io/Minesweeper/project-img.png",
+            "techs": ["Html", "Css", "JavaScript", "Gulp"],
+            "desc": [
+                "Reproduction d'un démineur en vanilla JavaScript.",
+                "La grille est customizable avec quelque limite."
+            ],
+            "demoLink": "https://pierreyvesflamand.github.io/Minesweeper/build",
+            "codeLink": "https://github.com/PierreYvesFlamand/Minesweeper"
         }
     ]
 }
