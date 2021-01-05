@@ -25,7 +25,7 @@ export default function Projects() {
 }
 
 function Project({ data }) {
-    const { react = false, img } = data;
+    const { img, techs } = data;
     const [modalOpen, setModalOpen] = useState(false);
     const [ref, fadeIn] = FadeIn();
 
@@ -52,7 +52,9 @@ function Project({ data }) {
                         <i className='far fa-eye'></i>VIEW PROJECT
                     </span>
                 </div>
-                {react && <i className='fab fa-react react react-tag'></i>}
+                {techs.some((tech) => tech.toLowerCase() === 'react') && (
+                    <i className='fab fa-react react react-tag'></i>
+                )}
             </div>
         </>
     );

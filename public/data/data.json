@@ -46,7 +46,6 @@
 
     "projects": [
         {
-            "react": true,
             "title": "Portfolio",
             "img": "https://pierreyvesflamand.github.io/Portfolio/project-img.png",
             "techs": ["Html", "Css", "JavaScript", "React", "Responsive", "Webpack"],
