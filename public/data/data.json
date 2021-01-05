@@ -61,7 +61,7 @@
         {
             "title": "Kore",
             "img": "https://pierreyvesflamand.github.io/Kore/project-img.png",
-            "techs": ["Html", "Css", "Sass", "JavaScript", "Responsive", "Mobile First", "Gulp"],
+            "techs": ["Html", "Css", "Sass", "JavaScript", "Responsive", "Gulp"],
             "desc": [
                 "Site one page de présentation de servives d'une société réalisé dans le cadre de ma formation à Saint-Laurent.",
                 "Point important : La barre de navigation réagit en temps réel par rapport à la position dans le site",
@@ -73,7 +73,7 @@
         {
             "title": "IslWeb",
             "img": "https://pierreyvesflamand.github.io/IslWeb/project-img.png",
-            "techs": ["Html", "Css", "Sass", "JavaScript", "Responsive", "Mobile First", "Gulp"],
+            "techs": ["Html", "Css", "Sass", "JavaScript", "Responsive", "Gulp"],
             "desc": [
                 "Portfolio/Blog multi-pages réalisé dans le cadre de ma formation à Saint-Laurent. ",
                 "Les icônes proviennent de fontawesome.com et linearicons.com."
